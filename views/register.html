@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Crea tu Cuentat</title>
+</head>
+<body>
+    <form action="/register" method="POST">
+    <label for="name" id="name">Nombre y Apellido
+        <input type="text">
+    </label>
+    <label for="user" id="user">Nombre de Usuario
+        <input type="text">
+    </label>
+    <label for="birthdate" id="birthdate">Fecha de Nacimiento
+        <input type="date" name="birthdate">
+    </label>
+    <label for="adress" id="adress">Domicilio
+        <input type="text">
+    </label>
+    <label for="userprofile" id="userprofile">Perfil de Usuario
+        <input type="radio" name="userprofile" value="comprar">
+        <input type="radio" name="userprofile" value="vender">
+    </label>
+   <label for="interest" id="interest">Catergorias de interés
+       <input type="checkbox" name="interest" value="electro">
+       <input type="checkbox" name="interest" value="moda">
+       <input type="checkbox" name="interest" value="hogar">
+       <input type="checkbox" name="interest" value="Jugueteria">
+       <input type="checkbox" name="interest" value="vida sana">
+   </label>
+   <label for="photo" id="photo">Foto de Usuario
+       <input type="file" name="photo">
+   </label>
+   <label for="password" id ="password">Contraseña
+       <input type="password">
+   </label>
+   <label for="confirmpassword" id ="confirmpassword">Confirmar Contraseña
+    <input type="password">
+</label>
+    <button type="reset" name="borrar">borrar los datos</button>
+    <button type="submit" name="enviar"><a href="/">enviar </a></button> 
+    
+
+
+</form>
+</body>
+</html>

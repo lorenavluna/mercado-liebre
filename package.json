@@ -1,0 +1,23 @@
+{
+  "name": "proyecto_en_playground",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lorenavluna/hola.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lorenavluna/hola/issues"
+  },
+  "homepage": "https://github.com/lorenavluna/hola#readme",
+  "description": ""
+}
