@@ -72,6 +72,7 @@ p.manoalineada{
     display: initial;
 opacity: 0;
 transition: opacity 0.5;
+font-size: 16px;
 
 }
 
@@ -95,6 +96,7 @@ a#titulares{
  
 h2#titulares{
     text-align: center;
+    font-size: 24px;
 }
 div a#titulares1{
     display: flex;
@@ -123,20 +125,29 @@ div.burger-menu{
         color: white;
         text-align: center;
         font-size: 1em;
-        background-color: #03264c;
-        width: 3%;
+        background-color: #1259c3;
+        width: 8%;
         display: flex;
         margin: auto;
+       
      }
-
-.separacion{
+     .fas.fa-bars{
         margin:auto;
-        border: 15px solid #ebebeb;
+        padding: 5px;
+        }
+    .separacion{
+        margin:10px;
+        
         text-align: left;
-       padding: 50px;
+        padding: 50px;
+       
+     }
+     .separacion:hover{
+        border: 15px solid #ebebeb;
+       
      }
 
-main i{
+    main i{
         text-align: left;
         width:auto;
         margin: auto;
@@ -144,21 +155,22 @@ main i{
    
     
 
-#precio{
-    font-size: 25px;   
-     display: flex;
-       flex-grow: 1;
-       width: 30%;
-       display: inline;
-       margin-right: 10px;
+    #precio{
+        font-size: 18px;   
+         display: flex;
+         flex-grow: 1;
+         width: 30%;
+         display: inline;
+         margin-right: 10px;
    }
 
 #descuento{
-    display: flex;
+        display: flex;
        flex-grow: 1;
        width: 70%;
        color: #39b54a;
        display: inline;
+       font-size: 16px;
 }
 img{
         border-bottom: #ebebeb solid 1px;
@@ -188,18 +200,23 @@ footer{
         line-height: 10px;
         color: #666;
         font-size: 13px;
+        margin:auto;
     
     }
     .copyright{font-size: 0.7rem;   
     }
 footer i{
     color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+   
 }
 main{
     width: 90%;
+    margin:auto;
    margin-bottom: 10px;
 }
-form{
+.form{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -211,6 +228,13 @@ form{
     width: 45%;
     align-self: center;
     text-align: center;
+}
+form{
+
+    position: relative;
+    right: 650px;
+    bottom: -20px;
+    
 }
 body button{
     margin: auto;
@@ -226,20 +250,39 @@ form button:hover{
 background-color:#0022AA;
 }
 
+
 @media(max-width:361px){
    header section.main-header{
         display: none;
-    }      }
-@media(max-width:361px){
+    }  
     .descripcion{
         display: none;
+        
     }
+.descripcion:hover{
+ opacity: 1;
+
 }
+    }
+
 @media(min-width:769px){
     .separacion{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
 
 }}
+@media(max-width:769px){
+    #barraBusqueda{
+        width: 100%;
+    }
+    #manoalineada{
+        width:100%;
+        font-size: 0.5em;
+    }
+#descripcion{
+    display: none;
+}
+}
+
 @media(min-width:769px){
     .fas.fa-bars{
 display: none;
@@ -254,6 +297,7 @@ flex-direction: column;
 @media(min-width:769px){
     footer div.container{
 display: flex;
+margin: auto;
 flex-direction: row;
 line-height: 15px;
 padding: 15px 35px;

@@ -17,6 +17,8 @@
         <section class="top-header">
                 <h1><img src="/images/logo-mercado-liebre.svg" width="180"></h1>
                 <p id="barraBusqueda"><i class="fas fa-search"></i>Lugar para poner la barra de búsqueda</p>
+
+                
                 <p class="manoalineada">Comprá en cuotas y sin tarjeta de crédito<i class="fas fa-hand-holding-usd"></i></p>
         </section>
     
@@ -33,7 +35,7 @@
            
     <div id="alineado">
     <div id="alineado2">
-         <p type="none"><a id="titulares1"href="/register">Creá tu cuenta</a></p>
+         <p type="none"><a id="titulares1"href="/register" >Creá tu cuenta</a></p>
          <i class="far fa-address-card"></i>
        </div>
        <div id="alineado2">
@@ -54,12 +56,13 @@
     
        
     </header>
-    <form action="/login" method="POST">
+    <form action="/login" method="POST" class="form">
         <label for="user" id="user">Nombre de Usuario
-            <input type="text">
+            <input type="text"required value="error">
+            
         </label>
         <label for="password" id ="password">Contraseña
-            <input type="password">
+            <input type="password"required>
             </label>
         <button type="submit" name="enviar"><a href="/">enviar </a></button> 
     </form>
